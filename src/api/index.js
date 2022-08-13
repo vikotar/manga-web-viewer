@@ -6,7 +6,6 @@ const BASE_URL = "http://18.177.140.79:8080/";
  * @returns a list of books
  */
 export const getBooks = async () => {
-    console.log('getBooks');
     const response = await fetch(BASE_URL + "books/");
     const data = await response.json();
     return data;

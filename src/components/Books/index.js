@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Tabs, TabList, Tab, Spinner } from "@chakra-ui/react";
 
 import { getBooks } from '../../api/index';
@@ -7,11 +6,7 @@ import { getBooks } from '../../api/index';
 //components
 import BookDetails from '../../components/Books/BookDetails/index';
 
-Books.propTypes = {
-
-};
-
-function Books(props) {
+function Books() {
   const [loading, setLoading] = useState(false);
   const [selectedBookIndex, setSelectedBookIndex] = useState(0);
   const [books, setBooks] = useState([]);

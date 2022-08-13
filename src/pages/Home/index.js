@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Books from '../../components/Books/index';
 import './styles.scss'
@@ -8,7 +7,7 @@ index.propTypes = {
 
 };
 
-function index(props) {
+function index() {
   return (
     <div className="container">
       <Books />
